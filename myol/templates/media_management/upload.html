@@ -42,12 +42,11 @@
     <section>
 
         <div class="container">
-            <form method="post" action="{% url 'upload' %">
+            <form method="post" action="{% url 'media_management:upload' %}">
                 {% csrf_token %}
             <div class="input-group mb-3">
                 <input type="file" class="form-control" id="inputGroupFile02">
-                <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                <button class="input-group-text" type="submit">Upload</button>
+                <button class="input-group-text" for="inputGroupFile02" type="submit">Upload</button>
               </div>
             </form>
         </div>

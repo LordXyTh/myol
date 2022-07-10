@@ -72,3 +72,9 @@ INSTALLED_APPS += ["django_extensions"]  # noqa F405
 CELERY_TASK_EAGER_PROPAGATES = True
 # Your stuff...
 # ------------------------------------------------------------------------------
+
+# Pinata
+# ------------------------------------------------------------------------------
+PINATA_API_KEY = env("API_KEY", default="")
+PINATA_API_SECRET = env("API_SECRET", default="")
+PINATA_JWT = env("JWT", default="")
